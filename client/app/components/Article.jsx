@@ -23,7 +23,7 @@ const EmailIcon = generateShareIcon('email');
 
 const styles = {
   card: {
-    width: '400px',
+    width: '350px',
     height: '300px',
     display: 'flex',
     borderRadius: '0px',
@@ -57,7 +57,7 @@ const styles = {
   },
   featured: {
     boxShadow: 'none',
-    width: '800px',
+    width: '700px',
     height: '300px',
     display: 'flex',
     borderRadius: '0px',
