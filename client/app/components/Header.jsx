@@ -7,13 +7,13 @@ const style = {
     position: 'absolute',
     right: 15,
     textDecoration: 'underline',
-    bottom: 2,
+    bottom: 10,
     color: 'white',
   },
   title: {
     marginRight: 25,
     position: 'absolute',
-    bottom: 0,
+    bottom: 10,
     left: 10,
     color: 'white',
     fontSize: 22
@@ -23,7 +23,7 @@ const style = {
     position: 'absolute',
     top: 0,
     width: '100%',
-    height: 30,
+    height: 50,
   },
   text: {
     display: 'flex',
@@ -35,7 +35,6 @@ const Header = () => (
   <div style={style.Header}>
     <div style={style.text}>
       <div style={style.title}>NewNews</div>
-      <Link to="/about"><div style={style.about}>About Us</div></Link>
     </div>
   </div>
 );

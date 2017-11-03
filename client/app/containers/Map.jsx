@@ -128,7 +128,7 @@ class Map extends React.Component {
         'method' : initBox2D,
       }, {
         'event' : 'clickMapObject',
-        'method' : (event) => { console.log('clicked: ', event); this.props.selectWord(event.mapObject.value); }
+        'method' : (event) => { this.props.selectWord(event.mapObject.value); }
       }
     ];
 

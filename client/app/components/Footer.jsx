@@ -28,6 +28,7 @@ const Footer = () => (
   <div style={style.footer}>
     <div style={style.text}>
       <div style={style.copywrite}>&copy; 2017 dotConnection</div>
+      <Link to="/about"><div style={style.about}>About Us</div></Link>
     </div>
   </div>
 );
