@@ -10,6 +10,7 @@ node_modules/
 
 # Environment Directories
 config/
+mongodb_config.js
 
 package-lock.json
 client/app/box2d2.js
