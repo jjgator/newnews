@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI = 'mongodb://newnews:newnews@ds141185.mlab.com:41185/newnews';
+const mongoURI = 'mongodb://admin:admin@ds251245.mlab.com:51245/newnews';
 // const mongoURI = 'mongodb://localhost/app';
 
 mongoose.connect(mongoURI, { useMongoClient: true });
@@ -11,3 +11,4 @@ mongodb.once('open', function(){
 module.exports = mongodb;
 
 // const mongoURI = 'mongodb://newnews:newnews@ds235785.mlab.com:35785/newnews'; // johnathan's mlab
+//mlab un: jjgator, db un: admin
