@@ -16,6 +16,7 @@ app.use( serve(__dirname + '/client') );
 
 router
   .get('/articles', articleHandler.retrieveArticles)
+  .get('/oldnews', articleHandler.dumpOldNews)
   .get('/articles/:key', articleHandler.retrieveGlobalByKey)
   // .get('/articles/:key', articleHandler.retrieveByKey)
   .get('/articles/concept/:concept', articleHandler.retrieveByConcept)
