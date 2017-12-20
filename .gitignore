@@ -14,4 +14,3 @@ config/
 package-lock.json
 client/app/box2d2.js
 client/build/bundle.js
-mongodb_config.js
