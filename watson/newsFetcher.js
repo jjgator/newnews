@@ -8,6 +8,7 @@ const Article = require('../models/Article.js');
 const Key = require('../models/Key.js');
 const {url, username, password, version} = require('../config/config.js');
 const Continents = require('./Continents.js');
+const articleHandler = require('../requestHandlers/article-handler.js');
 
 /*// node-schedule time format
 'second, minute, hour, dayOfMonth, month, dayOfWeek'*/
@@ -18,8 +19,12 @@ const date = new Date();
 const today = date.toJSON().split('T')[0];
 date.setDate(date.getDate()-1);
 const yesterday = date.toJSON().split('T')[0];
-console.log(`today's date is: ${today}`)
-console.log(`yesterday's date is: ${yesterday}`)
+console.log(`today's date is: ${today}`);
+console.log(`yesterday's date is: ${yesterday}`);
+
+articleHandler.dumpOldNews();
+articleHandler.dumpOldKeys();
+
 for(let continentName in Continents){
 
   var countryList = Continents[continentName];
