@@ -62,7 +62,7 @@ exports.dumpOldNews = async( ctx, next ) => {
 }
 
 exports.dumpOldKeys = async( ctx, next ) => {
-  await Key.find({}).where('query_date').lte(yesterday).then(keys => {
+  await Key.find({}).where('query_date').lte(cutoffDate).then(keys => {
     keys.forEach(key => {
       key.remove();
     })
