@@ -106,7 +106,7 @@ const Article = ({ article, handleTouchTap, concepts }) => (
       actAsExpander={false}
     />
     <CardText expandable={false} style={styles.card.text} >
-      {article.featured ? article.text.slice(0,400) + '...' : article.text.slice(0,200) + '...' } <a target="_blank" href={article.url}>See More</a>
+      {article.featured ? article.text.slice(0,375) + '...' : article.text.slice(0,200) + '...' } <a target="_blank" href={article.url}>See More</a>
       <div className="chips">{
         concepts.map((concept, i) => {
           if (i < 3) {
