@@ -4,7 +4,7 @@ const Key = require('../models/Key.js');
 let date = new Date();
 date.setDate(date.getDate()-1);
 const yesterday = date.toJSON().split('T')[0];
-const cutoffDate = new Date(new Date().setDate(new Date().getDate()-5)).toJSON().split('T')[0];
+const cutoffDate = new Date(new Date().setDate(new Date().getDate()-15)).toJSON().split('T')[0];
 
 exports.retrieveArticles = async (ctx, next) => {
   await Article.find({crawl_date: {$gt:yesterday}}).then( articles => {

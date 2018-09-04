@@ -12,7 +12,7 @@ exports.retrieveKeys = async (ctx, next) => {
   var keys = [];
   var topArticles = [];
   await Key.find({
-    query_date: {$gt:yesterday}
+    // query_date: {$gt:yesterday}
   }).then( (keyConcepts) => {
     keys = keyConcepts.filter( ({key}) => { return !Blacklist.globalBlacklist.includes(key) });
     return keys;

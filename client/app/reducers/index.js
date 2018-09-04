@@ -22,7 +22,6 @@ function articleReducer(state=null, action) {
 function activeTagReducer(state = {showModal: false}, action) {
   switch(action.type) {
     case 'SELECT_TAG':
-      console.log('in reducer', action.payload)
       return {tag: action.payload, showModal: true} 
       break;
     case 'HIDE_MODAL': {

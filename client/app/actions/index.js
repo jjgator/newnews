@@ -11,7 +11,6 @@ export const selectWord = (word) => {
 };
 
 export const selectTag = (tag) => {
-  console.log(tag);
   return {
     type: 'SELECT_TAG',
     payload: tag

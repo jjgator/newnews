@@ -90,7 +90,6 @@ const sortConcepts = obj => {
 
 const Article = ({ article, handleTouchTap, concepts }) => (
   concepts = sortConcepts(concepts),
-  console.log(article.featured),
   <Card style={article.featured ? styles.featured : styles.card}>
     <CardHeader
       avatar={article.main_image_url ? 
